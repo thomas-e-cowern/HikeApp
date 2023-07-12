@@ -76,9 +76,10 @@ struct MotionAnimationView: View {
 // MARK: - Preview
 struct MotionAnimationViiew_Previews: PreviewProvider {
     static var previews: some View {
-        ZStack {
-            Color.teal.ignoresSafeArea()
-            MotionAnimationView()
-        }
+        MotionAnimationView()
+            .background(
+                Circle()
+                    .fill(.blue)
+            )
     }
 }
