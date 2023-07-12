@@ -1,5 +1,5 @@
 //
-//  CustomBackgrounView.swift
+//  CustomBackgroundView.swift
 //  HikeApp
 //
 //  Created by Thomas Cowern on 7/12/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomBackgrounView: View {
+struct CustomBackgroundView: View {
     // MARK: - Properties
     
     // MARK: - Body
@@ -15,10 +15,15 @@ struct CustomBackgrounView: View {
         ZStack {
             
             // MARK: Depth
-            
+            Color("ColorGreenDark")
+                .cornerRadius(40)
+                .offset(y: 12)
             
             // MARK: Light
-            
+            Color("ColorGreenLight")
+                .cornerRadius(40)
+                .offset(y: 3)
+                .opacity(0.85)
             
             // MARK: Surface
             LinearGradient(
@@ -35,9 +40,9 @@ struct CustomBackgrounView: View {
 }
 
 // MARK: - Preview
-struct CustomBackgrounView_Previews: PreviewProvider {
+struct CustomBackgroundView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomBackgrounView()
+        CustomBackgroundView()
             .padding()
     }
 }
