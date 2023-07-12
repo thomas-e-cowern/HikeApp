@@ -69,7 +69,13 @@ struct SettingsView: View {
             
             // About
             Section {
-                
+                CustomListRowView(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "HIKE", rowTintColor: .blue)
+                CustomListRowView(rowLabel: "Complatability", rowIcon: "info.circle", rowContent: "iOS, iPad OS", rowTintColor: .red)
+                CustomListRowView(rowLabel: "Technology", rowIcon: "swift", rowContent: "Swift", rowTintColor: .orange)
+                CustomListRowView(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0", rowTintColor: .purple)
+                CustomListRowView(rowLabel: "Developeer", rowIcon: "ellipsis.curlybraces", rowContent: "Thomas E Cowern", rowTintColor: .mint)
+                CustomListRowView(rowLabel: "Designer", rowIcon: "paintpalette", rowContent: "Robert Petras", rowTintColor: .pink)
+                CustomListRowView(rowLabel: "Websight", rowIcon: "globe", rowContent: "https://google.com", rowTintColor: .indigo)
 
             } header: {
                 Text("About the App")

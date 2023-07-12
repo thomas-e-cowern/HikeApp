@@ -18,14 +18,14 @@ struct CustomListRowView: View {
     var body: some View {
         LabeledContent {
             Text(rowContent)
-                .foregroundColor(rowTintColor)
+                .foregroundColor(.black)
                 .fontWeight(.heavy)
         } label: {
             HStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: 8)
                         .frame(width: 30, height: 30)
-                        .foregroundColor(.blue)
+                        .foregroundColor(rowTintColor)
                     Image(systemName: rowIcon)
                         .foregroundColor(.white)
                         .fontWeight(.semibold)
