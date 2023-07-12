@@ -69,7 +69,8 @@ struct SettingsView: View {
             
             // About
             Section {
-                Text("List Row")
+                
+
             } header: {
                 Text("About the App")
             } footer: {
