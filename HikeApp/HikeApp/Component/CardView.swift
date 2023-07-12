@@ -35,11 +35,13 @@ struct CardView: View {
                                 )
                         )
                         
+                        Spacer()
+                        
                         Button {
                             // show a sheet
                             print("Button pressed")
                         } label: {
-                            Text("Button")
+                            CustomButtonView()
                         }
 
                     }
