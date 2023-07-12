@@ -17,8 +17,8 @@ struct ContentView: View {
                 .fill(
                     LinearGradient(
                         colors: [
-                            Color("ColorIndigoMedium"),
-                            Color("ColorSalmonLight")
+                            Color.customIndigoMedium,
+                            Color.customSalmonLight
                         ],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing)
