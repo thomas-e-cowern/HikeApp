@@ -12,23 +12,9 @@ struct ContentView: View {
     
     // MARK: - Body
     var body: some View {
-        ZStack {
-            Circle()
-                .fill(
-                    LinearGradient(
-                        colors: [
-                            Color.customIndigoMedium,
-                            Color.customSalmonLight
-                        ],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing)
-                )
-                .frame(width: 256, height: 256)
-            
-            Image("image-1")
-                .resizable()
-                .scaledToFit()
-        } //: End of ZStack
+        VStack {
+            CardView()
+        } //: End of VStack
     } //: End of body
 }
 
