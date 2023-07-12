@@ -68,6 +68,21 @@ struct SettingsView: View {
             
             
             // About
+            Section {
+                Text("List Row")
+            } header: {
+                Text("About the App")
+            } footer: {
+                HStack {
+                    Spacer()
+                    Text("Copyright @ All rights reserved")
+                    Spacer()
+                }
+                .padding(.vertical, 8)
+            }
+
+            
+            
         } // MARK: End of list
     }
 }
