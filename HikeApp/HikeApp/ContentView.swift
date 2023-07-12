@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: - Properties
+    
+    // MARK: - Body
     var body: some View {
         ZStack {
             Circle()
@@ -25,10 +28,11 @@ struct ContentView: View {
             Image("image-1")
                 .resizable()
                 .scaledToFit()
-        }
-    }
+        } //: End of ZStack
+    } //: End of body
 }
 
+// MARK: - Preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

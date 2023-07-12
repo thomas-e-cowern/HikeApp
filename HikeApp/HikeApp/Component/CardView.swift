@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct CardView: View {
+    // MARK: - Properties
+    
+    // MARK: - Body
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
+// MARK: - Preview
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         CardView()
