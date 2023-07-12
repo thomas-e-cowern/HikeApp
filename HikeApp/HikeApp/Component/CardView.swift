@@ -33,7 +33,7 @@ struct CardView: View {
                                     startPoint: .top,
                                     endPoint: .bottom
                                 )
-                        )
+                            )
                         
                         Spacer()
                         
@@ -43,7 +43,7 @@ struct CardView: View {
                         } label: {
                             CustomButtonView()
                         }
-
+                        
                     }
                     
                     Text("Fun and enjoyable outdoor activity for friends and family")
@@ -74,6 +74,40 @@ struct CardView: View {
                 }
                 
                 // MARK: Footer
+                Button {
+                    // Random number generator
+                    print("random number will be generated")
+                } label: {
+                    Text("Explore more")
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [
+                                    .customGreenLight,
+                                    .customGreenMedium
+                                ],
+                                startPoint: .top,
+                                endPoint: .bottom
+                            )
+                        )
+                        .shadow(color: .black.opacity(0.25), radius: 0.25, x: 1, y: 2)
+                } //: End of button
+                .padding(.vertical)
+                .padding(.horizontal, 30)
+                .background(
+                    LinearGradient(
+                        colors: [
+                            .customGrayLight,
+                            .customGrayMedium
+                        ],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    )
+                )
+                .cornerRadius(40)
+                
+                
             } //: End of ZStack
         } //: End of ZStack
         .frame(width: 320, height: 570)
