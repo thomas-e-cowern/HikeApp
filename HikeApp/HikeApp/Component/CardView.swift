@@ -87,6 +87,7 @@ struct CardView: View {
                     Image("image-\(imageNumber)")
                         .resizable()
                         .scaledToFit()
+                        .animation(.easeOut(duration: 0.2), value: imageNumber)
                 }
                 
                 // MARK: Footer
