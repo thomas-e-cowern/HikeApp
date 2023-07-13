@@ -86,6 +86,14 @@ struct SettingsView: View {
                         ForEach(alternateAppIcons.indices, id: \.self) { icon in
                             Button {
                                 print("Icon \(alternateAppIcons[icon]) was pressed")
+                                
+                                UIApplication.shared.setAlternateIconName(alternateAppIcons[icon]) { error in
+                                    if error != nil {
+                                        print("Faile request to update the app's icon: \(String(describing: error?.localizedDescription))")
+                                    } else {
+                                        print("Succes! You have changed the app's icon to \(alternateAppIcons[icon])")
+                                    }
+                                }
                             } label: {
                                 Image("\(alternateAppIcons[icon])-Preview")
                                     .resizable()
@@ -93,7 +101,6 @@ struct SettingsView: View {
                                     .frame(width: 80, height: 80)
                                     .cornerRadius(16)
                             }
-
                         }
                     }
                 }
