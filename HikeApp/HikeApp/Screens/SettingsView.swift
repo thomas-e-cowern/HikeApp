@@ -74,17 +74,18 @@ struct SettingsView: View {
             
             // Icons
             Section {
-                Text("Choose your favorite app icon from the collection above")
+                Text("Choose your favorite app icon from the collection below")
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .multilineTextAlignment(.center)
                     .foregroundColor(.secondary)
                     .font(.footnote)
+                    .padding(.bottom, 12)
                 
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
+                    HStack (spacing: 12) {
                         ForEach(alternateAppIcons.indices, id: \.self) { icon in
                             Button {
-                                print("Icon button was pressed")
+                                print("Icon \(alternateAppIcons[icon]) was pressed")
                             } label: {
                                 Image("\(alternateAppIcons[icon])-Preview")
                                     .resizable()
